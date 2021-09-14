@@ -70,7 +70,7 @@ class Utils {
 
     /**
      * @param string $text
-     * @return array|string|
+     * @return array|string
      */
     public static function getConfigMessage(string $text) {
         return str_replace('{prefix}', self::getPrefix(), Main::getInstance()->getConfig()->get($text));

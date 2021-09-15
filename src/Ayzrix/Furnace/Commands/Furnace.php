@@ -13,16 +13,18 @@
 
 namespace Ayzrix\Furnace\Commands;
 
+use Ayzrix\Furnace\Main;
 use Ayzrix\Furnace\Utils\Utils;
-use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\command\PluginCommand;
 use pocketmine\item\Item;
 use pocketmine\Player;
 
-class Furnace extends Command {
+class Furnace extends PluginCommand {
 
-    public function __construct() {
-        parent::__construct(Utils::getIntoConfig("command_name"), Utils::getIntoConfig("command_description"));
+    public function __construct(Main $plugin) {
+        parent::__construct(Utils::getIntoConfig("command_name"), $plugin);
+        $this->setDescription(Utils::getIntoConfig("command_description"));
         $this->setPermission(Utils::getIntoConfig("command_permission"));
         $this->setAliases(Utils::getIntoConfig("command_aliases"));
     }

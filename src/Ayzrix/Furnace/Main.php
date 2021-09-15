@@ -27,6 +27,6 @@ class Main extends PluginBase {
     public function onEnable() {
         self::$instance = $this;
         $this->saveDefaultConfig();
-        $this->getServer()->getCommandMap()->register("furnace", new Furnace());
+        $this->getServer()->getCommandMap()->register("furnacecommand", new Furnace($this));
     }
 }

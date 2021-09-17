@@ -18,7 +18,13 @@ use pocketmine\item\Item;
 
 class Utils {
 
+    /**
+     * @var string[]
+     *
+     * Furnaces recipes from https://minecraft.fandom.com/wiki/Smelting
+     */
     public static $furnaces = [
+        Item::POTATO . ":0" => Item::BAKED_POTATO . ":0",
         Item::RAW_BEEF . ":0" => Item::COOKED_BEEF . ":0",
         Item::RAW_SALMON . ":0" => Item::COOKED_SALMON . ":0",
         Item::RAW_PORKCHOP . ":0" => Item::COOKED_PORKCHOP . ":0",
@@ -57,7 +63,35 @@ class Utils {
         Item::STAINED_CLAY . ":12" => "232:0",
         Item::STAINED_CLAY . ":13" => "233:0",
         Item::STAINED_CLAY . ":14" => "234:0",
-        Item::STAINED_CLAY . ":15" => "235:0"
+        Item::STAINED_CLAY . ":15" => "235:0",
+        Item::GOLD_HELMET . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_CHESTPLATE . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_LEGGINGS . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_BOOTS . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_SWORD . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_PICKAXE . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_AXE . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_SHOVEL . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_HOE . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::GOLD_HORSE_ARMOR . ":0" => Item::GOLD_NUGGET . ":0",
+        Item::IRON_HELMET . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_CHESTPLATE . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_LEGGINGS . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_BOOTS . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_SWORD . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_PICKAXE . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_AXE . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_SHOVEL . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_HOE . ":0" => Item::IRON_NUGGET . ":0",
+        Item::IRON_HORSE_ARMOR . ":0" => Item::IRON_NUGGET . ":0",
+        Item::CHAIN_HELMET . ":0" => Item::IRON_NUGGET . ':0',
+        Item::CHAIN_CHESTPLATE . ":0" => Item::IRON_NUGGET . ':0',
+        Item::CHAIN_LEGGINGS . ":0" => Item::IRON_NUGGET . ':0',
+        Item::CHAIN_BOOTS . ":0" => Item::IRON_NUGGET . ':0',
+        Item::CACTUS . ":0" => Item::DYE . ":2",
+        Item::KELP . ":0" => Item::DRIED_KELP . ":0",
+        Item::CHORUS_FRUIT . ":0" => Item::CHORUS_FRUIT_POPPED . ":0",
+        Item::STONE_BRICK . ":0" => "98:0"
     ];
 
 

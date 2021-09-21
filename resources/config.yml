@@ -10,7 +10,7 @@
 prefix: "§6[§fFurnace§6]"
 
 command_name: "furnace"
-command_description: "Furnace the items in your inventory"
+command_description: "Furnace the items in your hand"
 command_permission: "furnace.command"
 # ["alias1", "alias2", "alias3", ...]
 command_aliases: []
